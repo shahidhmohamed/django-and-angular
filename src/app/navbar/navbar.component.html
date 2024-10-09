@@ -1,0 +1,28 @@
+<nav class="navbar p-4 bg-gradient-to-br from-[#1e3a8a] to-[#2563eb]">
+  <div class="container mx-auto flex justify-between items-center">
+    <a
+      [routerLink]="['']"
+      class="text-white font-bold text-xl flex items-center"
+    >
+      MI WATERS <i class="fas fa-arrow-right ml-2"></i>
+    </a>
+    <div>
+      <ul class="flex space-x-4">
+        <li *ngFor="let item of NavItems">
+          <a
+            [routerLink]="item.route"
+            routerLinkActive="active"
+            class="text-white hover:text-yellow-500"
+            >{{ item.name }}
+          </a>
+        </li>
+      </ul>
+      <div class="drop"></div>
+      <div class="drop"></div>
+      <div class="drop"></div>
+      <div class="drop"></div>
+      <div class="drop"></div>
+      <div class="drop"></div>
+    </div>
+  </div>
+</nav>
